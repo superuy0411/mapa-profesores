@@ -39,9 +39,3 @@ for _, row in df.iterrows():
     ).add_to(cluster)
 
 st_folium(mapa, width=1000, height=600)
-
-        r["direccion"] = direccion_edit
-        if foto_edit:
-            r["foto"] = base64.b64encode(foto_edit.read()).decode()
-        st.success("Registro actualizado.")
-        st.session_state.edit_index = None
